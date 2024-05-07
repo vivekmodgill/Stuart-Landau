@@ -3,6 +3,6 @@
 
 
 
-#Usage
+#Usage \
 pip install git+https://github.com/vivekmodgill/Stuart-Landau.git \
-from StuartLandau import simulate_SL \
+from StuartLandau import simulate_SL 
