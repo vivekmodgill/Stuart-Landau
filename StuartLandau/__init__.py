@@ -1,3 +1,3 @@
 # Stuart-Landau Package Initialization
 
-from .StuartLandauModel import simulate
+from .StuartLandauModel import simulate_sl
