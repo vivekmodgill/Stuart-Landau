@@ -1,3 +1,8 @@
+# Original script was written and provided by Francisco Páscoa dos Santos.
+# Reference: Castaldo, F., Páscoa dos Santos, F., Timms, R. C., Cabral, J., Vohryzek, J., Deco, G., Woolrich, M., Friston, K., 
+# Verschure, P., & Litvak, V. (2023). Multi-modal and multi-model interrogation of large-scale functional brain networks. 
+# NeuroImage, 277, 120236. https://doi.org/10.1016/j.neuroimage.2023.120236
+
 import os
 import numpy as np
 from numba import njit, prange, cuda, f8
@@ -76,5 +81,3 @@ def simulate_SL(t_len, W_mat, sim_time, store_time, dt, dt_save, a_bif, speed):
                 store_count += 1
     
     return output
-
-
