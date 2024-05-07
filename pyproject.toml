@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "A Python package for simulating the Stuart-Landau model."
 authors = ["Vivek Sharma <vivekmodgil@proton.me>"]
 license = "MIT"
+readme = "README.md"
+packages = [{include = "Stuart-Landau"}]
 
 [tool.poetry.dependencies]
 python = "*"
