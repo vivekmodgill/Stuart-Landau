@@ -9,7 +9,7 @@ from numba import njit, prange, cuda, f8
 import scipy.signal as sig
 
 #Stuart Landau Model
-
+@njit(nogil=True)
 def simulate_SL(t_len, W_mat, sim_time, store_time, dt, dt_save, a_bif, speed):
     
     W = W_mat.copy()
