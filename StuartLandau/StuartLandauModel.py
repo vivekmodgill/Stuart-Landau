@@ -39,7 +39,7 @@ def simulate_SL(t_len, W_mat, sim_time, store_time, dt, dt_save, a_bif, speed):
     # Defines vectors to store activity. Storage starts in the points defined in store and store_time timesteps of activity are recorded
     # This is done to avoid huge arrays with mostly irrelevant data.
     store_time  = min(store_time, sim_time)
-    output      = np.zeros((n, int(np.floor(store_time / dt_save))), dtype = np.complex_)
+    output      = np.zeros((n, int(np.floor(store_time / dt_save))), dtype = np.complex128)
     store_count = 0
 
     # Fills past activity vector with random values around the target firing rate
