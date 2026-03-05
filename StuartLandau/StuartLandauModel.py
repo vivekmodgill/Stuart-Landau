@@ -54,7 +54,7 @@ def simulate_SL(t_len, W_mat, sim_time, store_time, dt, dt_save, a_bif, speed):
 
         # Computes delayed input from other nodes        
         state_z   = state.copy()
-        del_state = np.zeros((n, n), dtype = np.complex_)
+        del_state = np.zeros((n, n), dtype = np.complex128)
 
         for i in range(n):
             for j in range(n):
